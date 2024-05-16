@@ -4,29 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"></link>
+
 </head>
 <body>
+    <script src="script.js"></script>
     <h1>todos</h1>
 
     <div>
         <label for="toBeDone"></label>
-        <input type="text" id="toBeDone" name="toBeDone" placeholder="What needs to be done?">
-    </div>
-    
-    <div class="tasks">
-        <label class="container">Create divs
-            <input type="checkbox" name="radio">
-            <span class="checkmark"></span>
-          </label>
-    </div>
-    
-    <div class="tasks">
-        <label class="container">Center divs
-            <input type="checkbox" name="radio">
-            <span class="checkmark"></span>
-          </label>
+        <input type="text" id="toBeDone" name="toBeDone" placeholder="What needs to be done?" onkeydown="createDiv(event)">
     </div>
 
+    <div id="resultDiv"></div>
+    <div id="taskButtonsContainer">
+        <button id="activeButton" class="taskButton">Active</button>
+        <button id="completedButton" class="taskButton">Completed</button>
+        <button id="allButton" class="taskButton  active">All</button>
+    </div>    
+    
 </body>
 </html>
