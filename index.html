@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css"></link>
-
+    <title>Tasks</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <script src="script.js"></script>
@@ -18,10 +17,11 @@
 
     <div id="resultDiv"></div>
     <div id="taskButtonsContainer">
+        <span id="taskCounter">0 tasks left</span> <!-- Task counter -->
         <button id="activeButton" class="taskButton">Active</button>
         <button id="completedButton" class="taskButton">Completed</button>
-        <button id="allButton" class="taskButton  active">All</button>
-    </div>    
-
+        <button id="allButton" class="taskButton active">All</button>
+        <button id="clearCompletedButton" onclick="clearCompleted()">Clear completed</button> <!-- Clear completed button -->
+    </div>
 </body>
 </html>
